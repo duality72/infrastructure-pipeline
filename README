@@ -1,0 +1,7 @@
+A very simple example of an infrastructure pipeline.
+
+Requires:
+- Ant
+- Ivy
+- Vagrant
+
