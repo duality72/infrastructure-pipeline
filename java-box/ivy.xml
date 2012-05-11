@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+	<info organisation="com.thoughtworks" module="java-box"/>
+	<publications>
+		<artifact name="package" type="box"/>
+	</publications>
+</ivy-module>
+
