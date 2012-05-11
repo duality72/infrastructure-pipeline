@@ -2,6 +2,10 @@ A very simple example of an infrastructure pipeline.
 
 Requires:
 - Ant
+-- tested with version 1.8.1
 - Ivy
+-- tested with version 2.2.0
+-- installed in ANT_HOME/lib
 - Vagrant
+-- tested with version 0.9.7, Ruby 1.9.2, and VirtualBox 4.1.10
 

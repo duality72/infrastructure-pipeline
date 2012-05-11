@@ -1,0 +1,10 @@
+<ivy-module version="2.0">
+	<info organisation="com.thoughtworks" module="jenkins-box"/>
+	<publications>
+		<artifact name="package" type="box"/>
+	</publications>
+	<dependencies>
+		<dependency org="com.thoughtworks" name="java-box" rev="latest.integration"/>
+	</dependencies>
+</ivy-module>
+
