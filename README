@@ -9,3 +9,4 @@ Requires:
 - Vagrant
 -- tested with version 0.9.7, Ruby 1.9.2, and VirtualBox 4.1.10
 
+I’ve tried to make this fairly simple and foolproof, but don’t be too surprised if you have problems. You should also be aware that VMs may be left running depending on the targets you run and VM images will be left on the filesystem. It’s probably a good idea to run the ‘halt’, ‘clean’, and ‘clean-ivy’ targets when you’re done and run VirtualBox and remove any lingering VMs.

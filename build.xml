@@ -1,0 +1,30 @@
+<project name="infrastructure-pipeline" default="build" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<target name="clean">
+		<subprojects target="clean"/>
+	</target>
+
+	<target name="build">
+		<ant dir="java-box" target="publish"/>
+		<ant dir="jenkins-box" target="build"/>
+		<ant dir="go-box" target="build"/>
+	</target>
+
+	<target name="halt">
+		<subprojects target="halt"/>
+	</target>
+
+	<target name="clean-ivy">
+		<ivy:cleancache />
+	</target>
+
+	<macrodef name="subprojects">
+		<attribute name="target"/>
+
+		<sequential>
+			<ant dir="java-box" target="@{target}"/>
+			<ant dir="jenkins-box" target="@{target}"/>
+			<ant dir="go-box" target="@{target}"/>
+		</sequential>
+	</macrodef>
+</project>
