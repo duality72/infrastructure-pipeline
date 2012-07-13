@@ -7,4 +7,7 @@ Vagrant::Config.run do |config|
 
   # Enable the Puppet provisioner
   config.vm.provision :puppet
+
+  # Forward guest port 8080 to host port 4567
+  config.vm.forward_port 8080, 4567
 end
